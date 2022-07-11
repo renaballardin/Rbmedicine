@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* PAGINA: NOSOTROS */
+.container-fluid {
+  padding: 0px;
+}
+
+.barra {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a8a9ab), color-stop(42%, #c4c5c9), color-stop(90%, #dad8d8));
+  background-image: linear-gradient(to bottom, #a8a9ab 0%, #c4c5c9 42%, #dad8d8 90%);
+  min-height: 60px;
+}
+
+.barra .logo {
+  font-family: "Cinzel", serif;
+  font-size: 32px;
+  -webkit-animation: backInLeft;
+          animation: backInLeft;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+}
+
+.barra .item {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  text-align: center;
+  background-color: #f1f0f0;
+}
+
+.nosotros, .profesionales, .tecnologias, .ubicacion {
+  font-size: 26px;
+  text-decoration: underline;
+  letter-spacing: 0.5px;
+  margin-top: 40px;
+  padding: 15px;
+}
+
+.profesionales {
+  color: #431313;
+}
+
+.tecnologias {
+  color: #566573;
+}
+
+.ubicacion {
+  margin-bottom: 20px;
+  color: #273441;
+}
+
+.descripcion {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 80px;
+  font-size: 18px;
+}
+
+.descripcionUbicacion {
+  margin-top: 15px;
+  padding: 15px;
+}
+
+.img {
+  padding: 0%;
+}
+
+iframe {
+  margin-bottom: 10px;
+}
+
+/* icono de whatsapp */
+.container-boton {
+  background-color: #2e6329;
+  border: 1px solid #fff;
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 25px;
+  padding: 9px;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+  -webkit-animation: efecto 1.3s infinite;
+          animation: efecto 1.3s infinite;
+}
+
+.container-boton:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.boton {
+  height: 28px;
+  width: 30px;
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
+}
+
+@-webkit-keyframes efecto {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes efecto {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}
+
+/* PAGINA: TRATAMIENTOS */
+.banner {
+  max-height: 100px;
+}
+
+.banner img {
+  width: 100%;
+  height: 100px;
+}
+
+.card {
+  margin: 30px;
+  margin-left: 150px;
+}
+
+.btn-primary {
+  border-radius: 20px;
+  border: white solid 1px;
+  background-color: rgba(187, 200, 205, 0.936);
+}
+
+.btn-primary:hover {
+  background-color: rgba(213, 214, 216, 0.872);
+  border: white;
+}
+
+/* PAGINA: PROMOCIONES*/
+.subtituloPromociones h2 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 23px;
+  padding: 10px;
+  border-bottom: #000 solid 1px;
+}
+
+.card-promociones {
+  width: 100%;
+  height: 250px;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  padding: 0%;
+}
+
+.card-promociones .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 10px;
+  -webkit-transition: .9s;
+  transition: .9s;
+}
+
+.card-promociones .front {
+  -webkit-transform: perspective(500px) rotateY(0deg);
+          transform: perspective(500px) rotateY(0deg);
+}
+
+/* Personalizacion de cards en su parte frontal */
+.promo-1 {
+  background-color: #e3ecff;
+}
+
+.promo-2 {
+  background-color: #d1dfff;
+}
+
+.promo-3 {
+  background-color: #dae5ff;
+}
+
+.card-promociones .front h3 {
+  font-size: 23px;
+  margin-top: 80px;
+  padding-top: 20px;
+  background-color: #bed2fe;
+  color: #0a1211;
+  text-align: center;
+}
+
+/* Cards en su parte reversa  */
+.card-promociones .back {
+  -webkit-transform: perspective(600px) rotateY(180deg);
+          transform: perspective(600px) rotateY(180deg);
+  background-color: #0a1211;
+  color: #f1f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -webkit-box-shadow: 0 5px 10px #000;
+          box-shadow: 0 5px 10px #000;
+}
+
+.card-promociones .back h3 {
+  font-size: 23px;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+.card-promociones .back p {
+  letter-spacing: 0.5px;
+}
+
+.card-promociones .back .link {
+  border-top: solid 1px #f1f0f0;
+  height: 20px;
+  line-height: 20px;
+}
+
+.card-promociones .back .link a {
+  color: #f1f0f0;
+  padding: 5px;
+}
+
+/* Rotacion de cards */
+.card-promociones:hover .front {
+  -webkit-transform: perspective(600px) rotateY(180deg);
+          transform: perspective(600px) rotateY(180deg);
+}
+
+.card-promociones:hover .back {
+  -webkit-transform: perspective(600px) rotateY(360deg);
+          transform: perspective(600px) rotateY(360deg);
+}
+
+/* Mas informacion de promociones */
+.info {
+  padding-top: 60px;
+  font-weight: 600;
+}
+
+.info .proximasPromos {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 50px;
+}
+
+.info .otrosTratamientos {
+  font-size: 17px;
+}
+
+button {
+  background-color: #bed2fe;
+  border-radius: 5px;
+  border: solid #bed2fe;
+  padding: 3px;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #566573;
+}
+
+/* PAGINA: GALERIA */
+/* PAGINA: CONTACTO */
+main h2 {
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 40px;
+  padding: 20px;
+}
+
+.formulario {
+  margin: 40px;
+  padding: 35px;
+  border: 2px;
+  width: 85%;
+}
+
+.formulario .formularioContenedor {
+  margin: 20px;
+  padding: 25px;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-size: 18px;
+  font-weight: bolder;
+  background-color: #F7F9F9;
+}
+
+.datos {
+  width: 100%;
+  margin: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+#boton {
+  font-size: 15px;
+  width: 100px;
+  padding: 5px;
+  border-color: #B3B6B7;
+  border-radius: 20px;
+  background-color: #f2f4f2;
+}
+
+#boton:hover {
+  background-color: #B3B6B7;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 850px) {
+  #boton {
+    width: 80px;
+  }
+}
+
+/* HEADER PARA TODAS MIS SECCIONES */
+.headerTratamientos, .headerPromociones, .headerContacto, .headerGaleria {
+  min-height: 55px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c4c5c7), color-stop(42%, #dcdddf), color-stop(90%, #ebebeb));
+  background-image: linear-gradient(to bottom, #c4c5c7 0%, #dcdddf 42%, #ebebeb 90%);
+}
+
+.headerTratamientos h1, .headerPromociones h1, .headerContacto h1, .headerGaleria h1 {
+  font-family: "Cinzel", serif;
+  font-size: 30px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+}
+
+/* FOOTER PARA TODAS MIS SECCIONES NUEVA VERSION*/
+.pie-pagina {
+  width: 100%;
+  background-color: white;
+}
+
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+  margin: 0%;
+  width: 260px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+  color: #000;
+  margin-top: 53px;
+  margin-bottom: 35px;
+  font-size: 23px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  color: #3b3b3b;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: #5f3917;
+}
+
+.pie-pagina .grupo-2 {
+  padding: 15px 10px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 100%;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    padding: 10px 0px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
